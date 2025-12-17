@@ -1,2 +1,6 @@
-# Systems-physiology-2-final-project
-BME2002 final project
+# Systems-Physiology-2-Final-Project
+BME2002 final project (Spring 2021, Sophomore year)
+
+For this project, we were given a dataset of n=159 patients. 43 of them had chronic kidney disease (CKD), while 115 were healthy. We were tasked with using this data to diagnose someone with CKD (or rather, predict if they have CKD). Using ROC curves as a predictive index, I interrogated the diagnostic power of the following factors to predict CKD: blood pressure, specific gravity, blood glucose, blood urea, serum creatine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, and red blood cell count. After, I created a composite score where for each patient, each factor was considered, and if it surpassed a certain threshold (derived from the ROC curves), it would be added to the composite score. Then, this composite score was evaluated with an ROC curve, and finally, an AUC was used to the composite scores ability to differentiate between CKD and non CKD patients. 
+
+I am publishing this simply as a work example. I included both the original livescript (.mlx), and a normal script (.m). MATLAB (online or application) is needed to view the .mlx file. They are nearly identical, except the livescript has the composite ROC curve, and the AUC result.
